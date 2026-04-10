@@ -1,0 +1,20 @@
+[project]
+name = "air-outbound-copilot"
+version = "0.1.0"
+description = "Backend-first GTM workflow prototype for persona-aware outbound generation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn>=0.30.0",
+  "pydantic>=2.8.0",
+  "python-dotenv>=1.0.0",
+  "pytest>=8.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

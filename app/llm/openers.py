@@ -1,0 +1,3 @@
+"""
+Outbound opener generation placeholder.
+"""

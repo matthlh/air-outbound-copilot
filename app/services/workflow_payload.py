@@ -1,0 +1,3 @@
+"""
+Workflow payload formatting placeholder.
+"""
