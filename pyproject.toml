@@ -9,11 +9,15 @@ dependencies = [
   "uvicorn>=0.30.0",
   "pydantic>=2.8.0",
   "python-dotenv>=1.0.0",
-  "pytest>=8.0.0"
+  "pytest>=8.0.0",
+  "httpx>=0.27.0"
 ]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
 
 [build-system]
 requires = ["setuptools>=61.0"]

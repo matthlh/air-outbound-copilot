@@ -30,13 +30,13 @@ Given an account input with scored signals, the system:
 
 ## Status
 
-- [ ] Scaffold complete
-- [ ] Input/output schemas
-- [ ] Persona logic
-- [ ] Outreach generation
-- [ ] n8n workflow payload
-- [ ] FastAPI endpoints
-- [ ] Tests
+- [x] Scaffold complete
+- [x] Input/output schemas (`app/schemas.py`)
+- [ ] Persona logic (stub only — real logic in `app/llm/persona.py`)
+- [ ] Outreach generation (stub only — real logic in `app/llm/openers.py`)
+- [x] Workflow payload schema + formatter (`app/services/workflow_payload.py`)
+- [x] POST /generate route (deterministic stub)
+- [ ] Real tests (lightweight tests in place; LLM integration tests pending)
 
 ## Example output
 
@@ -60,6 +60,19 @@ Given an account input with scored signals, the system:
 python -m venv .venv
 source .venv/bin/activate
 pip install -e .
+```
+
+## Run
+
+```bash
+# start the API server
+uvicorn app.main:app --reload
+
+# run the local demo loop (no server required)
+python scripts/run_local_demo.py
+
+# run tests
+pytest
 ```
 
 ## License

@@ -16,11 +16,17 @@ env/
 
 # Environment variables
 .env
+.env.*
+!.env.example
 
 # Test / coverage
 .pytest_cache/
 .coverage
+coverage.xml
 htmlcov/
+
+# Logs
+*.log
 
 # IDE / OS
 .vscode/

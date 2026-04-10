@@ -18,6 +18,7 @@ class AccountInput(BaseModel):
 
 
 class OutboundResult(BaseModel):
+    """API response model. Includes internal reasoning fields like reason_summary."""
     company: str
     persona: str
     pain_hypothesis: str
@@ -25,3 +26,16 @@ class OutboundResult(BaseModel):
     account_brief: str
     outreach_openers: list[str]
     next_best_action: str
+
+
+class WorkflowPayload(BaseModel):
+    """Delivery model for n8n / Slack / export. Omits internal reasoning fields."""
+    source: str = "air-outbound-copilot"
+    company: str
+    persona: str
+    pain_hypothesis: str
+    account_brief: str
+    outreach_openers: list[str]
+    next_best_action: str
+    fit_score: int
+    confidence: Literal["low", "medium", "high"]

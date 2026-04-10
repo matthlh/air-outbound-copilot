@@ -19,6 +19,7 @@ Python, FastAPI, Pydantic, SQLite, dotenv, pytest, n8n.
 - Prefer simple, typed Python.
 - Do not invent fake CRM integrations.
 - Do not add major frameworks without approval.
+- Keep deterministic facts (domain, fit score, signals, evidence) strictly separate from LLM interpretation and drafted content (persona, pain hypothesis, openers). Never mix sourcing.
 
 ## Architecture
 - API routes go in `app/api`
