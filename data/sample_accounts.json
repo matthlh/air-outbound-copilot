@@ -1,0 +1,25 @@
+[
+  {
+    "domain": "figma.com",
+    "fit_score": 78,
+    "confidence": "high",
+    "persona_guess": "Brand Operations / Creative Ops",
+    "signals": [
+      "brand operations",
+      "creative workflow",
+      "cross-functional collaboration",
+      "design systems"
+    ],
+    "reason_summary": "Likely strong fit due to creative workflow complexity and design collaboration signals.",
+    "evidence": [
+      {
+        "source": "homepage",
+        "snippet": "Figma helps teams design, prototype, and collaborate in one place."
+      },
+      {
+        "source": "careers",
+        "snippet": "Hiring across design, product, and brand-related functions."
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "company": "figma.com",
+  "persona": "Creative Director",
+  "pain_hypothesis": "Version control and cross-functional review friction",
+  "reason_summary": "High creative workflow complexity with strong design collaboration signals.",
+  "account_brief": "Figma shows strong signs of design-heavy collaboration and multi-stakeholder workflow complexity relevant to Air.",
+  "outreach_openers": [
+    "Saw that your team is scaling design collaboration across multiple stakeholders and workflows.",
+    "Noticed signals of heavy creative coordination and approval complexity that often create friction as teams grow.",
+    "Your public workflow and hiring signals suggest a lot of design and brand collaboration at scale."
+  ],
+  "next_best_action": "Send creative-ops-focused opener to Brand Operations lead"
+}

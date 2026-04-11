@@ -1,0 +1,3 @@
+"""
+Seed sample data placeholder.
+"""
